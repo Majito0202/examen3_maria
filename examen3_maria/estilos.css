@@ -1,0 +1,79 @@
+﻿
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#tablaPartidos {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    #tablaPartidos th, #tablaPartidos td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #tablaPartidos th {
+        background-color: #f2f2f2;
+    }
+
+
+#formularioEncuesta {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+    #formularioEncuesta label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    #formularioEncuesta input[type="text"],
+    #formularioEncuesta input[type="number"],
+    #formularioEncuesta input[type="email"],
+    #formularioEncuesta select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    #formularioEncuesta button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #formularioEncuesta button:hover {
+            background-color: #45a049;
+        }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

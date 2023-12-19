@@ -1,0 +1,26 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ReporteEncuestas.aspx.cs" Inherits="ReporteEncuestas" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Reporte de Encuestas</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h2>Reporte de Encuestas</h2>
+            <asp:GridView ID="gvEncuestas" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="IdEncuesta" HeaderText="ID Encuesta" />
+                    <asp:BoundField DataField="NumeroEncuesta" HeaderText="Número Encuesta" />
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    <asp:BoundField DataField="Edad" HeaderText="Edad" />
+                    <asp:BoundField DataField="CorreoElectronico" HeaderText="Correo Electrónico" />
+                    <asp:BoundField DataField="IdPartido" HeaderText="ID Partido" />
+                </Columns>
+            </asp:GridView>
+        </div>
+    </form>
+</body>
+</html>

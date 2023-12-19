@@ -1,0 +1,49 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="EncuestaForm.aspx.cs" Inherits="EncuestaForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Encuesta Form</title>
+    <link href="estilos.css" rel=" stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <label>Nombre:</label>
+            <asp:TextBox ID="txtNombre" runat="server" required></asp:TextBox>
+            <br />
+            <label>Edad:</label>
+            <asp:TextBox ID="txtEdad" runat="server" type="number" required></asp:TextBox>
+            <br />
+            <label>Correo Electrónico:</label>
+            <asp:TextBox ID="txtCorreo" runat="server" type="email" required></asp:TextBox>
+            <br />
+            <label>Partido Político:</label>
+            <asp:DropDownList ID="ddlPartido" runat="server" required>
+                <asp:ListItem Text="--Seleccione--" Value="" />
+            </asp:DropDownList>
+            <br />
+            <asp:Button ID="btnAgregarEncuesta" runat="server" Text="Agregar Encuesta" OnClick="btnAgregarEncuesta_Click" />
+        </div>
+    </form>
+</body>
+</html>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h2>Reporte de Encuestas</h2>
+            <asp:GridView ID="gvEncuestas" runat="server" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="IdEncuesta" HeaderText="ID Encuesta" />
+                    <asp:BoundField DataField="NumeroEncuesta" HeaderText="Número Encuesta" />
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    <asp:BoundField DataField="Edad" HeaderText="Edad" />
+                    <asp:BoundField DataField="CorreoElectronico" HeaderText="Correo Electrónico" />
+                    <asp:BoundField DataField="IdPartido" HeaderText="ID Partido" />
+                </Columns>
+            </asp:GridView>
+        </div>
+    </form>
+</body>
+
